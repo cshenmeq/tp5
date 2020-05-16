@@ -34,6 +34,6 @@ class Goods extends Base
 
     public function goodsadd()
     {
-        
+        echo 666;
     }
 }
