@@ -7,6 +7,7 @@
  */
 
 namespace app\admin\controller;
+use think\Cache;
 
 
 use app\admin\model\GoodsModel;
@@ -34,7 +35,9 @@ class Goods extends Base
 
     public function goodsadd()
     {
-        echo 666;
-        echo 666;
+        Cache::set("name",'PHP no.1');
+        Cache::set("age",'29');
+        echo Cache::get("name")."<br>";
+        echo Cache::get("age");
     }
 }
